@@ -214,25 +214,28 @@
   }
 
   .hero-collage-wrap {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .hero-collage-wrap::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
   }
 
   .hero-collage {
     width: max-content;
-    animation: none;
-    transform: none;
+    animation: marquee-scroll-mobile 22s linear infinite;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
     padding: 0 10px 4px;
   }
 
   .collage-card {
     flex-basis: 220px;
     height: 300px;
+  }
+}
+
+@keyframes marquee-scroll-mobile {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
   }
 }
