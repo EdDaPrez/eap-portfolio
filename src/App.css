@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  padding: 64px 0 52px;
+  animation: floatIn 0.5s ease;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 20px 40px;
+  text-align: center;
+  color: var(--muted);
+  background: rgba(7, 17, 25, 0.7);
+}
+
+.footer p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 52px 0 40px;
+  }
+}
