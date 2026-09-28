@@ -358,7 +358,7 @@ export default function Projects() {
                     </div>
                   )}
 
-                  {project.id !== 'polyrail' && project.presentationUrl && (
+                  {project.id !== 'polyrail' && project.id !== 'occupancy-monitor' && project.presentationUrl && (
                     <div className="project-links">
                       <a className="presentation-link" href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
                         View presentation
