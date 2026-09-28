@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,6 +9,10 @@ import './App.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [activeSection])
 
   return (
     <div className="app">
