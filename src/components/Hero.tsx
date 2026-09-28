@@ -89,8 +89,7 @@ export default function Hero({ setActiveSection }: HeroProps) {
         <div className="hero-copy">
           <h1 className="hero-title">Hello, I’m Eduardo!</h1>
           <p className="hero-description">
-            I’m a mechanical engineering student at Rice University who enjoys building technical systems,
-            making ideas tangible, and solving problems in ways that are practical, useful, and worth learning from.
+            I’m a mechanical engineering student at Rice University who enjoys designing solutions to everyday problems. I thrive in environments where I'm constantly learning, and am never afraid to step outside my comfort zone, applying my individual lived experiences to every project I embark on!
           </p>
 
           <div className="hero-cta">
